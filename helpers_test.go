@@ -13,7 +13,7 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2/utils"
-	"github.com/valyala/fasthttp"
+	"github.com/dkuerner/fasthttp"
 )
 
 // go test -v -run=^$ -bench=Benchmark_RemoveNewLines -benchmem -count=4

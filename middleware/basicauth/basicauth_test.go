@@ -10,7 +10,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/utils"
-	"github.com/valyala/fasthttp"
+	"github.com/dkuerner/fasthttp"
 )
 
 // go test -run Test_BasicAuth_Next

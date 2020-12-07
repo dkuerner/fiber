@@ -8,7 +8,7 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/utils"
-	"github.com/valyala/fasthttp"
+	"github.com/dkuerner/fasthttp"
 )
 
 func Test_Monitor_405(t *testing.T) {

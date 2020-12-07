@@ -13,7 +13,7 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/internal/storage/memory"
 	"github.com/gofiber/fiber/v2/utils"
-	"github.com/valyala/fasthttp"
+	"github.com/dkuerner/fasthttp"
 )
 
 func Test_Cache_CacheControl(t *testing.T) {

@@ -24,7 +24,7 @@ import (
 	"github.com/gofiber/fiber/v2/internal/encoding/json"
 	"github.com/gofiber/fiber/v2/internal/schema"
 	"github.com/gofiber/fiber/v2/utils"
-	"github.com/valyala/fasthttp"
+	"github.com/dkuerner/fasthttp"
 )
 
 // maxParams defines the maximum number of parameters per route.
@@ -352,14 +352,14 @@ func (c *Ctx) Download(file string, filename ...string) error {
 
 // Request return the *fasthttp.Request object
 // This allows you to use all fasthttp request methods
-// https://godoc.org/github.com/valyala/fasthttp#Request
+// https://godoc.org/github.com/dkuerner/fasthttp#Request
 func (c *Ctx) Request() *fasthttp.Request {
 	return &c.fasthttp.Request
 }
 
 // Response return the *fasthttp.Response object
 // This allows you to use all fasthttp response methods
-// https://godoc.org/github.com/valyala/fasthttp#Response
+// https://godoc.org/github.com/dkuerner/fasthttp#Response
 func (c *Ctx) Response() *fasthttp.Response {
 	return &c.fasthttp.Response
 }
@@ -928,7 +928,7 @@ func (c *Ctx) SendFile(file string, compress ...bool) error {
 	// Save the filename, we will need it in the error message if the file isn't found
 	filename := file
 
-	// https://github.com/valyala/fasthttp/blob/master/fs.go#L81
+	// https://github.com/dkuerner/fasthttp/blob/master/fs.go#L81
 	sendFileOnce.Do(func() {
 		sendFileFS = &fasthttp.FS{
 			Root:                 "/",
@@ -949,10 +949,10 @@ func (c *Ctx) SendFile(file string, compress ...bool) error {
 	c.pathOriginal = utils.CopyString(c.pathOriginal)
 	// Disable compression
 	if len(compress) <= 0 || !compress[0] {
-		// https://github.com/valyala/fasthttp/blob/master/fs.go#L46
+		// https://github.com/dkuerner/fasthttp/blob/master/fs.go#L46
 		c.fasthttp.Request.Header.Del(HeaderAcceptEncoding)
 	}
-	// https://github.com/valyala/fasthttp/blob/master/fs.go#L85
+	// https://github.com/dkuerner/fasthttp/blob/master/fs.go#L85
 	if len(file) == 0 || file[0] != '/' {
 		hasTrailingSlash := len(file) > 0 && file[len(file)-1] == '/'
 		var err error

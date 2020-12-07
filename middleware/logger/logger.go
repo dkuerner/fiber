@@ -15,7 +15,7 @@ import (
 	"github.com/gofiber/fiber/v2/internal/colorable"
 	"github.com/gofiber/fiber/v2/internal/fasttemplate"
 	"github.com/gofiber/fiber/v2/internal/isatty"
-	"github.com/valyala/fasthttp"
+	"github.com/dkuerner/fasthttp"
 )
 
 // Logger variables

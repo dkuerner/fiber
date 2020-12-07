@@ -2,7 +2,7 @@ package compress
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/valyala/fasthttp"
+	"github.com/dkuerner/fasthttp"
 )
 
 // New creates a new middleware handler

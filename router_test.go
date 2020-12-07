@@ -15,7 +15,7 @@ import (
 	"testing"
 
 	"github.com/gofiber/fiber/v2/utils"
-	"github.com/valyala/fasthttp"
+	"github.com/dkuerner/fasthttp"
 )
 
 var routesFixture = routeJSON{}

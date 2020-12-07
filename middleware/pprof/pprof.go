@@ -5,7 +5,7 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/valyala/fasthttp/fasthttpadaptor"
+	"github.com/dkuerner/fasthttp/fasthttpadaptor"
 )
 
 // Set pprof adaptors

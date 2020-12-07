@@ -4,7 +4,7 @@ import (
 	"strings"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/valyala/fasthttp/expvarhandler"
+	"github.com/dkuerner/fasthttp/expvarhandler"
 )
 
 // New creates a new middleware handler
